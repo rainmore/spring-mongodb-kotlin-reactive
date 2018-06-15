@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		kotlinVersion = '1.2.41'
+		kotlinVersion = '1.2.50'
 		springBootVersion = '2.0.2.RELEASE'
 	}
 	repositories {
@@ -51,4 +51,7 @@ dependencies {
 	runtime('org.springframework.boot:spring-boot-devtools')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
+	testCompile('org.jetbrains.kotlin:kotlin-test')
+	testCompile('org.jetbrains.kotlin:kotlin-test-junit')
+	testCompile('com.github.fakemongo:fongo:2.1.0')
 }
